@@ -9,9 +9,7 @@ pipeline{
          ansiColor('xterm')
     }
 stages{
-         stage('applb and db') {
-            parallel {
-                stage('DB') {
+         stage('DB') {
                     steps {
                         sh """
                            cd 04-databases
